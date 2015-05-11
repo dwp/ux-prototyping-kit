@@ -1,0 +1,14 @@
+<div class="form-group {{errorClass}} {{classes}}">
+  <label class="form-label-bold">{{label}}</label>
+  <div data-validation-error class="form-error validation-message">
+    {{error}}
+  </div>
+  <div>
+    <select>
+      <option value="">{{defaultOption}}</option>
+      {{#options}}
+        <option value="{{name}}" {{selectedAttribute}}>{{name}}</option>
+      {{/options}}
+    </select>
+  </div>
+</div>

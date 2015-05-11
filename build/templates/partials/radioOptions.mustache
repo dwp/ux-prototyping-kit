@@ -1,0 +1,21 @@
+<div class="form-group {{classes}}" {{attributes}}>
+  <fieldset>
+    <legend class="form-label-bold">
+      {{label}}
+    </legend>
+    <div class="form-error validation-message">
+      {{error}}
+    </div>
+    <div class="form-hint">
+      {{help}}
+    </div>
+    {{#options}}
+      <div class="radio-group">
+        <label class="block-label">
+          <input type="radio" />
+          {{label}}
+        </label>
+      </div>
+    {{/options}}
+  </fieldset>
+</div>

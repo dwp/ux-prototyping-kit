@@ -1,0 +1,51 @@
+{{#pageHeading}}
+    {{> partials/pageHeading}}
+{{/pageHeading}}
+
+<form>
+  <p>Please enter details for {{user.name}}</p>
+
+  {{#form.firstName}}
+    {{> text}}
+  {{/form.firstName}}
+
+  {{#form.lastName}}
+    {{> text}}
+  {{/form.lastName}}
+
+  {{#form.password}}
+    {{> password}}
+  {{/form.password}}
+
+  {{#form.time}}
+    {{> textTime}}
+  {{/form.time}}
+
+  {{#form.select}}
+    {{> select}}
+  {{/form.select}}
+
+  {{#form.about}}
+    {{> textarea}}
+  {{/form.about}}
+
+  {{#form.employmentStatus}}
+    {{> radioOptions}}
+  {{/form.employmentStatus}}
+
+  {{#form.earnings}}
+    {{> textMoney}}
+  {{/form.earnings}}
+
+  {{#form.date}}
+    {{> textDate}}
+  {{/form.date}}
+
+  {{#form.satisfaction}}
+    {{> radioYesNo}}
+  {{/form.satisfaction}}
+
+  {{#form.submit}}
+    {{> button}}
+  {{/form.submit}}
+</form>

@@ -1,0 +1,40 @@
+<div class="form-group date-group {{classes}}">
+  <fieldset>
+    <legend class="form-label-bold">
+      {{label}}
+    </legend>
+    <div class="form-date">
+      <div class="form-error validation-message">
+        {{error}}
+      </div>
+      <div class="form-hint">
+        {{help}}
+      </div>
+
+      <div class="form-group">
+        <label>Hours</label>
+        <select class="form-control">
+          <option value="">--</option>
+          {{#time.hours}}
+            <option value="{{.}}">
+              {{.}}
+            </option>
+          {{/time.hours}}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>
+          Minutes
+        </label>
+        <select class="form-control">
+          <option value="">--</option>
+            {{#time.minutes}}
+              <option value="{{.}}">
+                {{.}}
+              </option>
+            {{/time.minutes}}
+        </select>
+      </div>
+    </div>
+  </fieldset>
+</div>

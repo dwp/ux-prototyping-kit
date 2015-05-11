@@ -1,0 +1,90 @@
+{
+  "pageHeading": {
+    "title": "Prototype framework"
+  },
+  "user": {
+    "name": "Molly"
+  },
+  "form": {
+    "firstName": {
+      "label": "First name"
+    },
+    "lastName": {
+      "label": "Last name",
+      "classes": "has-errors",
+      "error": "This is a required field"
+    },
+    "about": {
+      "label": "Tell us more about yourself",
+      "help": "For example, what is your favourite colour"
+    },
+    "time": {
+      "label": "What time can you attend your meeting?",
+      "help": "Please tell us when you wish to attend your meeting",
+      "time": {
+        "hours": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "minutes": [
+          "00",
+          "15",
+          "30",
+          "45"
+        ]
+      }
+    },
+    "password" : {
+      "label": "Please enter your password",
+      "help": "Your password should contain at least one uppercase letter (A-Z), one lowercase letter (a-z) and one number (0-9)"
+    },
+    "select" : {
+      "label": "Choose your favourite colour",
+      "defaultOption": "select a colour",
+      "options": [
+        {
+          "name": "blue"
+        },
+        {
+          "name": "green",
+          "selectedAttribute": "true"
+        }
+      ]
+    },
+    "employmentStatus": {
+      "label": "What is your current employment status",
+      "options": [
+        {
+          "label": "Self employed"
+        },
+        {
+          "label": "Unemployed"
+        },
+        {
+          "label": "Employee"
+        }
+      ]
+    },
+    "earnings": {
+      "label": "What is your monthly income",
+      "help": "Include all earnings from any source"
+    },
+    "date": {
+      "label": "When did you last have a day off"
+    },
+    "fun": {
+      "label": "Was it fun filling in this form",
+      "help": "Go on, be honest"
+    },
+    "submit": {
+      "label": "Submit"
+    }
+  }
+}
