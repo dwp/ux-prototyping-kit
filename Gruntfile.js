@@ -19,7 +19,8 @@ module.exports = function (grunt) {
             dist: {
                 root: 'dist/public',
                 stylesheets: '<%= dirs.dist.root %>/assets/stylesheets',
-                images: '<%= dirs.dist.root %>/assets/images'
+                images: '<%= dirs.dist.root %>/assets/images',
+                javascripts: '<%= dirs.dist.root %>/assets/javascripts'
             }
         },
         connect: {
@@ -83,6 +84,13 @@ module.exports = function (grunt) {
                         src: '**',
                         filter: 'isFile',
                         dest: '<%= dirs.dist.images %>'
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= dirs.build.govuk_frontend_toolkit %>/javascripts',
+                        src: '**',
+                        filter: 'isFile',
+                        dest: '<%= dirs.dist.javascripts %>'
                     }
                 ]
             }
