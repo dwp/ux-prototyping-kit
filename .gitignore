@@ -7,3 +7,5 @@ nbproject
 Thumbs.db
 Desktop.ini
 dist
+
+*.espressostorage
